@@ -7,107 +7,98 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Ingeniería Industrial</h1>
+  <h1>Malla Interactiva – Ingeniería Industrial</h1>
   <div class="container">
 
-    <!-- 1° Semestre -->
     <div class="semester">
       <h2>1° Semestre</h2>
-      <button class="subject" data-id="calculo_diferencial" data-unlocks="calculo_integral,fisica_mecanica">Cálculo Diferencial</button>
-      <button class="subject" data-id="catedra_global">Cátedra Global</button>
-      <button class="subject" data-id="dibujo_de_ingenieria" data-unlocks="dibujo_industrial">Dibujo de Ingeniería</button>
-      <button class="subject" data-id="formacion_humanista">Formación Humanista y Ciudadana</button>
-      <button class="subject" data-id="general_english_i" data-unlocks="general_english_ii">General English I</button>
-      <button class="subject" data-id="introduccion_ingenieria">Introducción a la Ingeniería Industrial</button>
-      <button class="subject" data-id="procesos_lectores" data-unlocks="expresion_oral">Procesos Lectores y Escriturales</button>
-      <button class="subject" data-id="razonamiento">Razonamiento y Representación Matemática</button>
+      <button class="subject" data-id="calculo_diferencial" data-unlocks="calculo_integral,fisica_mecanica">CÁLCULO DIFERENCIAL</button>
+      <button class="subject" data-id="catedra_global">CÁTEDRA GLOBAL</button>
+      <button class="subject" data-id="dibujo_ingenieria" data-unlocks="dibujo_industrial">DIBUJO DE INGENIERÍA</button>
+      <button class="subject" data-id="formacion_humanista">FORMACIÓN HUMANISTA Y CIUDADANA</button>
+      <button class="subject" data-id="english1" data-unlocks="english2">GENERAL ENGLISH I</button>
+      <button class="subject" data-id="intro_ing">INTRODUCCIÓN A LA INGENIERÍA INDUSTRIAL</button>
+      <button class="subject" data-id="procesos_lectoescritores" data-unlocks="expresion_oral">PROCESOS LECTORES Y ESCRITURALES</button>
+      <button class="subject" data-id="razonamiento">RAZONAMIENTO Y REPRESENTACIÓN MATEMÁTICA</button>
     </div>
 
-    <!-- 2° Semestre -->
     <div class="semester">
       <h2>2° Semestre</h2>
-      <button class="subject locked" data-id="calculo_integral" data-unlocks="ecuaciones_diferenciales,estatica">Cálculo Integral</button>
-      <button class="subject locked" data-id="fisica_mecanica" data-unlocks="calor_y_ondas,estatica">Física Mecánica</button>
-      <button class="subject locked" data-id="dibujo_industrial">Dibujo Industrial</button>
-      <button class="subject" data-id="algebra_lineal" data-unlocks="investigacion_operaciones_deterministicas">Álgebra Lineal</button>
-      <button class="subject locked" data-id="general_english_ii" data-unlocks="general_english_iii">General English II</button>
-      <button class="subject locked" data-id="expresion_oral">Expresión Oral y Argumentación</button>
-      <button class="subject" data-id="programacion" data-unlocks="contabilidad_costeo">Programación</button>
+      <button class="subject locked" data-id="algebra_lineal" data-unlocks="inv_op_deterministicas">ÁLGEBRA LINEAL</button>
+      <button class="subject locked" data-id="calculo_integral" data-unlocks="ecuaciones_diferenciales,estatica">CÁLCULO INTEGRAL</button>
+      <button class="subject locked" data-id="expresion_oral">EXPRESIÓN ORAL Y ARGUMENTACIÓN</button>
+      <button class="subject locked" data-id="fisica_mecanica" data-unlocks="calor_ondas,estatica">FÍSICA MECÁNICA</button>
+      <button class="subject locked" data-id="english2" data-unlocks="english3">GENERAL ENGLISH II</button>
+      <button class="subject" data-id="programacion" data-unlocks="contabilidad">PROGRAMACIÓN</button>
     </div>
 
-    <!-- 3° Semestre -->
     <div class="semester">
       <h2>3° Semestre</h2>
-      <button class="subject locked" data-id="calor_y_ondas" data-unlocks="electricidad_magnetismo,termodinamica">Calor y Ondas</button>
-      <button class="subject locked" data-id="ecuaciones_diferenciales">Ecuaciones Diferenciales</button>
-      <button class="subject locked" data-id="general_english_iii" data-unlocks="general_english_iv">General English III</button>
-      <button class="subject locked" data-id="probabilidad_estadistica" data-unlocks="estadistica_inferencial">Probabilidad y Estadística</button>
-      <button class="subject" data-id="quimica_general" data-unlocks="ciencia_tecnologia_materiales">Química General</button>
+      <button class="subject locked" data-id="calor_ondas" data-unlocks="electricidad,termodinamica">CALOR Y ONDAS</button>
+      <button class="subject locked" data-id="dibujo_industrial">DIBUJO INDUSTRIAL</button>
+      <button class="subject locked" data-id="ecuaciones_diferenciales">ECUACIONES DIFERENCIALES</button>
+      <button class="subject locked" data-id="english3" data-unlocks="english4">GENERAL ENGLISH III</button>
+      <button class="subject locked" data-id="probabilidad" data-unlocks="estadistica_inferencial">PROBABILIDAD Y ESTADÍSTICA</button>
+      <button class="subject" data-id="quimica" data-unlocks="materiales">QUÍMICA GENERAL</button>
     </div>
 
-    <!-- 4° Semestre -->
     <div class="semester">
       <h2>4° Semestre</h2>
-      <button class="subject locked" data-id="ciencia_tecnologia_materiales" data-unlocks="resistencia_materiales">Ciencia y Tecnología de los Materiales</button>
-      <button class="subject locked" data-id="contabilidad_costeo" data-unlocks="economia">Contabilidad y Costeo de Operaciones</button>
-      <button class="subject locked" data-id="electricidad_magnetismo">Electricidad y Magnetismo</button>
-      <button class="subject locked" data-id="estatica" data-unlocks="resistencia_materiales">Estática</button>
-      <button class="subject locked" data-id="estadistica_inferencial" data-unlocks="diseno_experimentos">Estadística Inferencial</button>
-      <button class="subject locked" data-id="general_english_iv" data-unlocks="general_english_v">General English IV</button>
+      <button class="subject locked" data-id="materiales" data-unlocks="resistencia">CIENCIA Y TECNOLOGÍA DE LOS MATERIALES</button>
+      <button class="subject locked" data-id="contabilidad">CONTABILIDAD Y COSTEO DE OPERACIONES</button>
+      <button class="subject locked" data-id="electricidad">ELECTRICIDAD Y MAGNETISMO</button>
+      <button class="subject locked" data-id="estadistica_inferencial" data-unlocks="diseno_experimentos">ESTADÍSTICA INFERENCIAL</button>
+      <button class="subject locked" data-id="estatica" data-unlocks="resistencia">ESTÁTICA</button>
+      <button class="subject locked" data-id="english4" data-unlocks="english5">GENERAL ENGLISH IV</button>
     </div>
 
-    <!-- 5° Semestre -->
     <div class="semester">
       <h2>5° Semestre</h2>
-      <button class="subject locked" data-id="diseno_experimentos" data-unlocks="control_estadistico,ingenieria_metodos">Diseño de Experimentos</button>
-      <button class="subject locked" data-id="economia" data-unlocks="administracion_organizaciones,ingenieria_mercados">Economía</button>
-      <button class="subject locked" data-id="general_english_v">General English V</button>
-      <button class="subject locked" data-id="investigacion_operaciones_deterministicas" data-unlocks="investigacion_operaciones_probabilisticas">Investigación de Operaciones Determinísticas</button>
-      <button class="subject locked" data-id="resistencia_materiales" data-unlocks="procesos_industriales">Resistencia de Materiales de Fabricación</button>
-      <button class="subject locked" data-id="termodinamica" data-unlocks="procesos_industriales">Termodinámica</button>
+      <button class="subject locked" data-id="diseno_experimentos" data-unlocks="control_estadistico,ingenieria_metodos">DISEÑO DE EXPERIMENTOS</button>
+      <button class="subject locked" data-id="economia" data-unlocks="admin_org,mercados">ECONOMÍA</button>
+      <button class="subject locked" data-id="english5">GENERAL ENGLISH V</button>
+      <button class="subject locked" data-id="inv_op_deterministicas" data-unlocks="inv_op_probabilisticas">INVESTIGACIÓN DE OPERACIONES DETERMINÍSTICAS</button>
+      <button class="subject locked" data-id="resistencia" data-unlocks="procesos_industriales">RESISTENCIA DE MATERIALES DE FABRICACIÓN</button>
+      <button class="subject locked" data-id="termodinamica" data-unlocks="procesos_industriales">TERMODINÁMICA</button>
     </div>
 
-    <!-- 6° Semestre -->
     <div class="semester">
       <h2>6° Semestre</h2>
-      <button class="subject locked" data-id="administracion_organizaciones" data-unlocks="sistemas_integrados,relaciones_industriales">Administración y Organizaciones</button>
-      <button class="subject" data-id="diseno_prototipado">Diseño y Prototipado</button>
-      <button class="subject locked" data-id="ingenieria_mercados" data-unlocks="ingenieria_financiera">Ingeniería de Mercados</button>
-      <button class="subject locked" data-id="ingenieria_metodos" data-unlocks="diseno_operaciones">Ingeniería de Métodos y Tiempos</button>
-      <button class="subject locked" data-id="investigacion_operaciones_probabilisticas" data-unlocks="simulacion_operaciones">Investigación de Operaciones Probabilísticas</button>
-      <button class="subject locked" data-id="procesos_industriales">Procesos Industriales</button>
+      <button class="subject locked" data-id="admin_org" data-unlocks="sistemas_gestion,relaciones_industriales">ADMINISTRACIÓN Y ORGANIZACIONES</button>
+      <button class="subject locked" data-id="diseno_prototipado" data-required-percentage="30">DISEÑO Y PROTOTIPADO</button>
+      <button class="subject locked" data-id="mercados" data-unlocks="financiera">INGENIERÍA DE MERCADOS</button>
+      <button class="subject locked" data-id="ingenieria_metodos" data-unlocks="diseno_operaciones">INGENIERÍA DE MÉTODOS Y TIEMPOS</button>
+      <button class="subject locked" data-id="inv_op_probabilisticas" data-unlocks="simulacion">INVESTIGACIÓN DE OPERACIONES PROBABILÍSTICAS</button>
+      <button class="subject locked" data-id="procesos_industriales">PROCESOS INDUSTRIALES</button>
     </div>
 
-    <!-- 7° Semestre -->
     <div class="semester">
       <h2>7° Semestre</h2>
-      <button class="subject locked" data-id="control_estadistico">Control Estadístico de Procesos</button>
-      <button class="subject locked" data-id="diseno_operaciones" data-unlocks="gerencia_operaciones,logistica_integral">Diseño de Operaciones</button>
-      <button class="subject" data-id="etica_ingenieria">Ética en Ingeniería Industrial</button>
-      <button class="subject locked" data-id="ingenieria_financiera">Ingeniería Financiera</button>
-      <button class="subject" data-id="metodologia_investigacion" data-unlocks="propuesta_investigacion">Metodología y Técnicas de Investigación en Ingeniería</button>
-      <button class="subject locked" data-id="sistemas_integrados" data-unlocks="pensamiento_sistemas">Sistemas Integrados de Gestión</button>
+      <button class="subject locked" data-id="control_estadistico">CONTROL ESTADÍSTICO DE PROCESOS</button>
+      <button class="subject locked" data-id="diseno_operaciones" data-unlocks="gerencia_operaciones">DISEÑO DE OPERACIONES</button>
+      <button class="subject locked" data-id="etica" data-required-percentage="65">ÉTICA EN INGENIERÍA INDUSTRIAL</button>
+      <button class="subject locked" data-id="financiera">INGENIERÍA FINANCIERA</button>
+      <button class="subject locked" data-id="metodologia" data-unlocks="propuesta">METODOLOGÍA Y TÉCNICAS DE INVESTIGACIÓN EN INGENIERÍA</button>
+      <button class="subject locked" data-id="sistemas_gestion" data-unlocks="pensamiento_sistemas">SISTEMAS INTEGRADOS DE GESTIÓN</button>
     </div>
 
-    <!-- 8° Semestre -->
     <div class="semester">
       <h2>8° Semestre</h2>
-      <button class="subject locked" data-id="gerencia_operaciones">Gerencia de Operaciones</button>
-      <button class="subject" data-id="ingenieria_proyectos" data-unlocks="diseno_innovacion_productos">Ingeniería de Proyectos</button>
-      <button class="subject locked" data-id="pensamiento_sistemas" data-unlocks="dinamica_sistemas">Pensamiento de Sistemas</button>
-      <button class="subject locked" data-id="propuesta_investigacion" data-unlocks="proyecto_culminante">Propuesta de Investigación en Ingeniería</button>
-      <button class="subject locked" data-id="relaciones_industriales">Relaciones Industriales</button>
-      <button class="subject locked" data-id="simulacion_operaciones" data-unlocks="diseno_instalaciones">Simulación de Operaciones</button>
+      <button class="subject locked" data-id="gerencia_operaciones" data-unlocks="logistica">GERENCIA DE OPERACIONES</button>
+      <button class="subject locked" data-id="ingenieria_proyectos" data-required-percentage="70">INGENIERÍA DE PROYECTOS</button>
+      <button class="subject locked" data-id="pensamiento_sistemas" data-unlocks="dinamica_sistemas">PENSAMIENTO DE SISTEMAS</button>
+      <button class="subject locked" data-id="propuesta" data-unlocks="proyecto_culminante">PROPUESTA DE INVESTIGACIÓN EN INGENIERÍA</button>
+      <button class="subject locked" data-id="relaciones_industriales">RELACIONES INDUSTRIALES</button>
+      <button class="subject locked" data-id="simulacion" data-unlocks="diseno_instalaciones">SIMULACIÓN DE OPERACIONES</button>
     </div>
 
-    <!-- 9° Semestre -->
     <div class="semester">
       <h2>9° Semestre</h2>
-      <button class="subject locked" data-id="dinamica_sistemas">Dinámica de Sistemas</button>
-      <button class="subject locked" data-id="diseno_instalaciones">Diseño de Instalaciones y Gestión Energética</button>
-      <button class="subject locked" data-id="diseno_innovacion_productos">Diseño e Innovación de Productos</button>
-      <button class="subject locked" data-id="logistica_integral">Logística Integral</button>
-      <button class="subject locked" data-id="proyecto_culminante">Proyecto Culminante de Diseño</button>
+      <button class="subject locked" data-id="dinamica_sistemas">DINÁMICA DE SISTEMAS</button>
+      <button class="subject locked" data-id="diseno_instalaciones">DISEÑO DE INSTALACIONES Y GESTIÓN ENERGÉTICA</button>
+      <button class="subject locked" data-id="diseno_innovacion">DISEÑO E INNOVACIÓN DE PRODUCTOS</button>
+      <button class="subject locked" data-id="logistica">LOGÍSTICA INTEGRAL</button>
+      <button class="subject locked" data-id="proyecto_culminante">PROYECTO CULMINANTE DE DISEÑO</button>
     </div>
 
   </div>
