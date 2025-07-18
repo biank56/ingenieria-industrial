@@ -18,16 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   subjects.forEach(subject => {
     subject.addEventListener('click', () => {
-      // No hace nada si está bloqueada
       if (subject.classList.contains('locked')) return;
 
-      // Alterna completado
+      // Marca o desmarca como completada
       if (subject.classList.contains('completed')) {
         subject.classList.remove('completed');
       } else {
         subject.classList.add('completed');
 
-        // Desbloquea materias ligadas directamente
+        // Desbloquea materias que dependen de esta
         const unlocks = subject.dataset.unlocks;
         if (unlocks) {
           unlocks.split(',').forEach(id => {
@@ -39,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      // Chequea materias que dependen de % completado
+      // Revisa si se desbloquea alguna por porcentaje
       checkPercentages();
     });
   });
