@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffe4ec; /* Rosado clarito bonito */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #c2185b; /* Fucsia/rosado oscuro */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Cada bloque de semestre */
+.semester {
+  background: #ffebf1; /* Fondo más claro para contraste */
+  border: 2px solid #c2185b; /* Bordes fucsia oscuro */
+  border-radius: 12px;
+  padding: 15px;
+  width: 220px;
+}
+
+.semester h2 {
+  text-align: center;
+  color: #c2185b; /* Fucsia/rosado oscuro */
+  font-size: 1.1em;
+}
+
+/* Materias normales */
+.subject {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
+  padding: 10px;
+  border: 2px solid #c2185b; /* Bordes fucsia oscuro */
+  border-radius: 8px;
+  background-color: #f8a5c2; /* Rosado medio */
+  color: black; /* Letras en negro */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+/* Hover solo si está desbloqueada y no completada */
+.subject:hover:not(.locked):not(.completed) {
+  background-color: #d28ae0; /* Lila suave */
+}
+
+/* Materias bloqueadas */
+.locked {
+  background-color: white !important;
+  color: grey !important;
+  border: 2px dotted grey !important;
+  cursor: not-allowed;
+}
+
+/* Materias completadas */
+.completed {
+  background-color: #c084dc !important; /* Lila */
+  color: black !important;
+  text-decoration: line-through black; /* Tachado negro */
+}
