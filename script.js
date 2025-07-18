@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
   const subjects = document.querySelectorAll('.subject');
 
-  // Función que revisa si ya alcanzaste el % requerido para desbloquear materias especiales
   function checkPercentages() {
     const total = subjects.length;
     const completed = document.querySelectorAll('.subject.completed').length;
     const percentage = (completed / total) * 100;
 
-    subjects.forEach(subj => {
-      if (subj.classList.contains('locked') && subj.dataset.requiredPercentage) {
-        const required = parseFloat(subj.dataset.requiredPercentage);
+    subjects.forEach(subject => {
+      if (subject.classList.contains('locked') && subject.dataset.requiredPercentage) {
+        const required = parseFloat(subject.dataset.requiredPercentage);
         if (percentage >= required) {
-          subj.classList.remove('locked');
+          subject.classList.remove('locked');
         }
       }
     });
@@ -19,27 +18,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   subjects.forEach(subject => {
     subject.addEventListener('click', () => {
-      // Si está bloqueada no hace nada
+      // No hace nada si está bloqueada
       if (subject.classList.contains('locked')) return;
 
-      // Si ya está completada, la desmarca
+      // Alterna completado
       if (subject.classList.contains('completed')) {
         subject.classList.remove('completed');
       } else {
-        // Marca como completada
         subject.classList.add('completed');
 
-        // Desbloquea materias que dependían directamente de esta
+        // Desbloquea materias ligadas directamente
         const unlocks = subject.dataset.unlocks;
         if (unlocks) {
           unlocks.split(',').forEach(id => {
             const target = document.querySelector(`.subject[data-id="${id.trim()}"]`);
-            if (target) target.classList.remove('locked');
+            if (target) {
+              target.classList.remove('locked');
+            }
           });
         }
       }
 
-      // Verificamos materias que dependen de % del plan
+      // Chequea materias que dependen de % completado
       checkPercentages();
     });
   });
