@@ -20,7 +20,6 @@ h1 {
 
 /* Cada bloque de semestre */
 .semester {
-  .semester {
   background: #ffebf1; /* Fondo más claro para contraste */
   border: 2px solid #c2185b; /* Bordes fucsia oscuro */
   border-radius: 12px;
